@@ -2,19 +2,30 @@
 body {
   padding-top: 50px;
   padding-bottom: 20px;
+  margin-bottom: 0px;
 }
 
-.logo{
-	color: white;
+a.logo{
+    max-height: 40px;
+    overflow: visible;
+    padding-top: 10px;
+	
 }
 
 .bg-header{
 	
 	background-image: url('../img/cover.jpg');
-	
+	box-shadow: 0px 4px 12px #aaaaaa;
 }
 .search-text{
 	font-family:HelveticaNeue-UltraLight;
 	margin-top:0px;
 	
+}
+
+.body-head{
+	
+	font-family:HelveticaNeue-Light;
+	font-size:24px;
+	color:#666666;
 }

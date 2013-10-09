@@ -37,25 +37,27 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <img src="img/Logo.png" width="80px" height="20px"/>
+          <a class="logo" href="#"><img src="img/Logo.png" /></a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">New Delhi <b class="caret"></b></a>
               <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
+                <li class="dropdown-header">NCR</li>
+                <li><a href="#">New Delhi</a></li>
+                <li><a href="#">Gurgaon</a></li>
+				<li><a href="#">Noida</a></li>
                 <li class="divider"></li>
-                <li class="dropdown-header">Nav header</li>
-                <li><a href="#">Separated link</a></li>
-                <li><a href="#">One more separated link</a></li>
+                <li><a href="#">Mumbai</a></li>
+                <li><a href="#">Bangalore</a></li>
+
               </ul>
-            </li>
+            </li>	
+            <li><a href="#">Women</a></li>
+            <li><a href="#about">Men</a></li>
+            <li><a href="#contact">Kids</a></li>
+
           </ul>
           <form class="navbar-form navbar-right">
             <div class="form-group">
@@ -80,34 +82,84 @@
 		
        <div class="col-md-7">
 		<div class="input-group">
- 			<input type="text" placeholder="Search for a product, store or locality" class="form-control">
+ 			<div class="input-group-btn">
+	        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">All <span class="caret"></span></button>
+	        <ul class="dropdown-menu">
+	          <li><a href="#">All</a></li>
+	          <li class="divider"></li>
+	          <li><a href="#">Women</a></li>
+	          <li><a href="#">Men</a></li>
+	          <li><a href="#">Kids</a></li>
+	        </ul>
+	      </div><!-- /btn-group -->
+
+			<input type="text" placeholder="Search for a product, store or locality" class="form-control">
 			<span class="input-group-btn">
-		        <button class="btn btn-danger" type="button">Go!</button>
+		        <button class="btn btn-danger" type="button"><span class="glyphicon glyphicon-search"></span></button>
 		      </span>
 			</div>
 		</div>		
              
        </div>
-			
+		
 
       </div>
     </div>
 
     <div class="container">
       <!-- Example row of columns -->
+	<div class="body-head">Latest Designs</div>
+      <div class="row">
+        <div class="col-lg-6">
+          <h4>Product 1</h4>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn btn-default" href="#">View details &raquo;</a></p>
+        </div>
+        <div class="col-lg-6">
+          <h4>Product 2</h4>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn btn-default" href="#">View details &raquo;</a></p>
+       </div>
+     
+      </div>
+
+      <hr>
+
+	<h3 class="body-head">Featured Stores</h3>
       <div class="row">
         <div class="col-lg-4">
-          <h2>Heading</h2>
+          <h4>Store 1</h4>
           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
           <p><a class="btn btn-default" href="#">View details &raquo;</a></p>
         </div>
         <div class="col-lg-4">
-          <h2>Heading</h2>
+          <h4>Store 2</h4>
           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
           <p><a class="btn btn-default" href="#">View details &raquo;</a></p>
        </div>
         <div class="col-lg-4">
-          <h2>Heading</h2>
+          <h4>Store 3</h4>
+          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p><a class="btn btn-default" href="#">View details &raquo;</a></p>
+        </div>
+      </div>
+
+      <hr>
+
+	<h3 class="body-head">Top Reviewers</h3>
+      <div class="row">
+        <div class="col-lg-4">
+          <h4>Reviewer 1</h4>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn btn-default" href="#">View details &raquo;</a></p>
+        </div>
+        <div class="col-lg-4">
+          <h4>Reviewer 2</h4>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn btn-default" href="#">View details &raquo;</a></p>
+       </div>
+        <div class="col-lg-4">
+          <h4>Reviewer 3</h4>
           <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
           <p><a class="btn btn-default" href="#">View details &raquo;</a></p>
         </div>
