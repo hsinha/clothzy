@@ -1,7 +1,7 @@
 /* Move down content because we have a fixed navbar that is 50px tall */
 body {
   padding-top: 50px;
-  padding-bottom: 20px;
+
   margin-bottom: 0px;
 }
 
@@ -10,6 +10,11 @@ a.logo{
     overflow: visible;
     padding-top: 10px;
 	
+}
+
+.login-form{
+	
+	height:26px;
 }
 
 .bg-header{
@@ -23,6 +28,11 @@ a.logo{
 	
 }
 
+.search-form{
+	box-shadow: 0px 0px 8px #555555;
+	
+}
+
 .body-head{
 	
 	font-family:HelveticaNeue-Light;
@@ -30,4 +40,40 @@ a.logo{
 	color:#666666;
 }
 
+#main {
+  overflow:auto;
+  padding-bottom:80px; /* this needs to be bigger than footer height*/
+}
 
+#wrap {
+  min-height: 100%;
+}
+
+
+.footer {
+  position: relative;
+  margin-top: -50px; /* negative value of footer height */
+  height: 50px;
+  clear:both;
+  padding-top:15px;
+  padding-right:15px;
+	text-align:right;
+	background-color: #eeeeee;
+	box-shadow: 0px 4px 12px #aaaaaa;
+	border-top: 1px solid #dddddd;
+}
+
+.reviewer-pic{
+max-height:60px;
+	
+}
+
+.green{
+	color:#77AD6F;
+	
+}
+
+.red{
+	
+	color:#cc0000;
+}

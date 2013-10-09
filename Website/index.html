@@ -60,14 +60,18 @@
 
           </ul>
           <form class="navbar-form navbar-right">
+
+
             <div class="form-group">
-              <input type="text" placeholder="Email" class="form-control">
+              <input type="text" placeholder="Email" class="form-control input-sm">
             </div>
             <div class="form-group">
-              <input type="password" placeholder="Password" class="form-control">
+              <input type="password" placeholder="Password" class="form-control input-sm">
             </div>
-            <button type="submit" class="btn btn-success">Sign in</button>
-          </form>
+            <button type="submit" class="btn btn-success btn-sm">Sign in</button>
+			<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+			<button type="submit" class="btn btn-default btn-sm">New User?</button>
+			</form>
         </div><!--/.navbar-collapse -->
       </div>
     </div>
@@ -83,7 +87,7 @@
        <div class="col-md-7">
 		<div class="input-group">
  			<div class="input-group-btn">
-	        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">All <span class="caret"></span></button>
+	        <button type="button" class=" search-form btn btn-default dropdown-toggle btn-lg" data-toggle="dropdown">All <span class="caret"></span></button>
 	        <ul class="dropdown-menu">
 	          <li><a href="#">All</a></li>
 	          <li class="divider"></li>
@@ -93,9 +97,9 @@
 	        </ul>
 	      </div><!-- /btn-group -->
 
-			<input type="text" placeholder="Search for a product, store or locality" class="form-control search-form">
-			<span class="input-group-btn">
-		        <button class="btn btn-primary search-button" type="button"><span class="glyphicon glyphicon-search"></span></button>
+			<input type="text" placeholder="Search for a product, store or locality" class="form-control search-form input-lg">
+			<span class="input-group-btn search-form">
+		        <button class="btn btn-primary btn-lg" type="button"><span class="glyphicon glyphicon-search"></span></button>
 		      </span>
 			</div>
 		</div>		
@@ -105,42 +109,67 @@
 
       </div>
     </div>
-
-    <div class="container">
+	<div id="wrap">
+    <div class="container" id="main">
       <!-- Example row of columns -->
 	<div class="body-head">Latest Designs</div>
+	
       <div class="row">
-        <div class="col-lg-6">
-          <h4>Product 1</h4>
+	     
+      
+      <div class="col-lg-4">
+		<h4>Product 2</h4>
           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
           <p><a class="btn btn-default" href="#">View details &raquo;</a></p>
-        </div>
-        <div class="col-lg-6">
-          <h4>Product 2</h4>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#">View details &raquo;</a></p>
-       </div>
-     
       </div>
+      <div class="col-lg-2">
+			<img src="img/featured-product-1.jpg" class="img-responsive img-thumbnail 	">
+      </div>
+      <div class="col-lg-4">
+		<h4>Product 2</h4>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn btn-default" href="#">View details &raquo;</a></p>
+      </div>
+      <div class="col-lg-2">
+			<img src="img/featured-product-2.jpg" class="img-responsive img-thumbnail">
+      </div>
+
+     
+  	</div>
 
       <hr>
 
 	<h3 class="body-head">Featured Stores</h3>
       <div class="row">
         <div class="col-lg-4">
-          <h4>Store 1</h4>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#">View details &raquo;</a></p>
+			<div class="thumbnail">
+		      <img src="img/featured-store-1.jpg" alt="...">
+		      <div class="caption">
+		        <h4>XYZ Store, Hauz Khas Village</h4>
+		        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+		        <p><a href="#" class="btn btn-primary">Visit Store &raquo;</a></p>
+		      </div>
+		    </div>
         </div>
-        <div class="col-lg-4">
-          <h4>Store 2</h4>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#">View details &raquo;</a></p>
-       </div>
-        <div class="col-lg-4">
-          <h4>Store 3</h4>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="#">View details &raquo;</a></p>
+       <div class="col-lg-4">
+			<div class="thumbnail">
+		      <img src="img/featured-store-2.jpg" alt="...">
+		      <div class="caption">
+		        <h4>ABC Store, South Ex II</h4>
+		        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+		        <p><a href="#" class="btn btn-primary">Visit Store &raquo;</a></p>
+		      </div>
+		    </div>
+        </div>
+       <div class="col-lg-4">
+			<div class="thumbnail">
+		      <img src="img/featured-store-3.jpg" alt="...">
+		      <div class="caption">
+		        <h4>DEF Store, Lajpat Nagar</h4>
+		        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+		        <p><a href="#" class="btn btn-primary">Visit Store &raquo;</a></p>
+		      </div>
+		    </div>
         </div>
       </div>
 
@@ -148,29 +177,74 @@
 
 	<h3 class="body-head">Top Reviewers</h3>
       <div class="row">
-        <div class="col-lg-4">
-          <h4>Reviewer 1</h4>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#">View details &raquo;</a></p>
-        </div>
-        <div class="col-lg-4">
-          <h4>Reviewer 2</h4>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#">View details &raquo;</a></p>
-       </div>
-        <div class="col-lg-4">
-          <h4>Reviewer 3</h4>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="#">View details &raquo;</a></p>
-        </div>
+		<div class="col-lg-4">
+        <ul class="media-list">
+		  <li class="media">
+		    <a class="pull-left" href="#">
+		      <img class="media-object reviewer-pic" src="img/top-reviewer-1.jpg" alt="...">
+		    </a>
+		    <div class="media-body">
+		      <h4 class="media-heading">Arun Kumar</h4>
+		      <p>New Delhi<br>
+				<span class="green">50</span> <span class="glyphicon glyphicon-thumbs-up"></span> | <span class="red">20 </span><span class="glyphicon glyphicon-thumbs-down"></span></p>
+		    </div>
+		  </li>
+		<li><h5>Latest Review: XYZ Store, Lajpat Nagar</b></h5>
+		<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p></li>
+		<a href="#">Read More &raquo;</a>
+		</ul>
+		</div>
+		<div class="col-lg-4">
+        <ul class="media-list">
+		  <li class="media">
+		    <a class="pull-left" href="#">
+		      <img class="media-object reviewer-pic" src="img/top-reviewer-2.jpg" alt="...">
+		    </a>
+		    <div class="media-body">
+		      <h4 class="media-heading">Satish Sharma</h4>
+		      <p>New Delhi<br>
+				<span class="green">50</span> <span class="glyphicon glyphicon-thumbs-up"></span> | <span class="red">20 </span><span class="glyphicon glyphicon-thumbs-down"></span></p>
+		    </div>
+		  </li>
+		<li><h5>Latest Review: XYZ Store, Lajpat Nagar</b></h5>
+		<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p></li>
+		<a href="#">Read More &raquo;</a>
+		</ul>
+		</div>
+		<div class="col-lg-4">
+        <ul class="media-list">
+		  <li class="media">
+		    <a class="pull-left" href="#">
+		      <img class="media-object reviewer-pic" src="img/top-reviewer-3.jpg" alt="...">
+		    </a>
+		    <div class="media-body">
+		      <h4 class="media-heading">Priya Das</h4>
+		      <p>New Delhi<br>
+				<span class="green">50</span> <span class="glyphicon glyphicon-thumbs-up"></span> | <span class="red">20 </span><span class="glyphicon glyphicon-thumbs-down"></span></p>
+		    </div>
+		  </li>
+		<li><h5>Latest Review: XYZ Store, Lajpat Nagar</b></h5>
+		<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p></li>
+		<a href="#">Read More &raquo;</a>
+		</ul>
+		</div>
+	
       </div>
 
       <hr>
-
-      <footer>
-        <p>&copy; Clothzy 2013</p>
-      </footer>
+<div class="text-center"><a href="#"><span class="glyphicon glyphicon-chevron-up"></span> Back to Top</a></div>
     </div> <!-- /container -->
+
+	<footer class="footer">
+		
+		<p>&copy; Clothzy 2013 · 
+		<a href="#">About · </a>
+		<a href="#">Privacy Policy · </a>
+		<a href="#">Register your store · </a>
+		<a href="#">Contact Us  </a></p>
+		
+	</footer>
+
 
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
