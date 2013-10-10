@@ -7,8 +7,8 @@
 
 @font-face{
 	font-family: 'HelveticaNeue';
-	src: url('../fonts/HelveticaNeueBold.ttf');
-
+	src: url('../fonts/HelveticaNeue-Bold.otf');
+	font-weight:bold;
 }
 
 @font-face{
@@ -103,4 +103,69 @@ max-height:60px;
 .red{
 	
 	color:#cc0000;
+}
+
+/* SIDEBAR STUFF */
+.sidebar-nav-fixed {
+    position:fixed;
+	top:80px;
+	width:250px;
+
+}
+
+.sidebar-nav-fixed .nav > li > a {
+	padding-left:5px;
+	font-size:16px;
+	color:#666666;
+	
+}
+
+.sidebar-nav-fixed .nav .nav > li > a {
+	padding-left:20px;
+	padding-top:0px;
+	padding-bottom:2px;
+	font-size:90%;
+	color:#428bca;
+}
+
+.sidebar-nav-fixed .nav .nav .nav > li > a {
+	padding-left:40px;
+	padding-top:0px;
+	padding-bottom:2px;
+	font-size:90%;
+	color:#428bca;
+}
+
+.sidebar-nav-fixed .nav .nav .nav .nav > li > a {
+	padding-left:60px;
+	padding-top:0px;
+	padding-bottom:2px;
+	font-size:90%;
+	color:#428bca;
+}
+
+
+.sidebar-text{
+	padding-left:10px;
+	
+}
+
+.pad-50{
+	padding-top:30px;
+	
+}
+.main-content-padded{
+	padding-left: 300px;
+	
+}
+
+.sortby{
+	padding-top:5px;
+	
+}
+
+.slider-style{
+	padding-left:10px;
+	padding-right:10px;
+	
 }

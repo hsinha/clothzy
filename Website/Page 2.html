@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html ng-app>
+  <head>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="Kartik Dhar">
+    
+	<link rel="shortcut icon" href="ico/favicon.png">
+	
+	<!--Angular.JS link-->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
+	<script src="js/sidebar.js"></script>
+	<script src="js/jquery-ui-1.8.16.custom.min.js"></script>
+    <script src="js/jQRangeSlider-min.js"></script>
+		<script src="js/bootstrap.js"></script>
+    <title>Clothzy: Home</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom CSS for site -->
+    <link href="css/clothzy.css" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="http://cdn.webrupee.com/font">
+    <link rel="stylesheet" href="css/iThing.css" type="text/css" />
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../../assets/js/html5shiv.js"></script>
+      <script src="../../assets/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+<body>
+	
+	<div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="logo" href="#"><img src="img/Logo.png" /></a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">New Delhi <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li class="dropdown-header">NCR</li>
+                <li><a href="#">New Delhi</a></li>
+                <li><a href="#">Gurgaon</a></li>
+				<li><a href="#">Noida</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Mumbai</a></li>
+                <li><a href="#">Bangalore</a></li>
+
+              </ul>
+            </li>	
+            <li><a href="#">Women</a></li>
+            <li><a href="#about">Men</a></li>
+            <li><a href="#contact">Kids</a></li>
+
+          </ul>
+          <form class="navbar-form navbar-right">
+
+
+            <div class="form-group">
+              <input type="text" placeholder="Email" class="form-control input-sm">
+            </div>
+            <div class="form-group">
+              <input type="password" placeholder="Password" class="form-control input-sm">
+            </div>
+            <button type="submit" class="btn btn-success btn-sm">Sign in</button>
+			<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+			<button type="submit" class="btn btn-default btn-sm">New User?</button>
+			</form>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </div>
+	
+	<div class="container pad-50">
+		
+		<div class="col-lg-3">
+			<div class=" navbar navbar-default sidebar-nav-fixed">
+				<ul class="nav nav-stacked sidebar-text">
+			  		<li class="active"><a>Category</a>
+						<ul class="nav">
+							<li>
+								<a>Women</a>
+								
+								<ul class="nav">
+									<li>
+										<a>Ethnic Wear</a>
+										
+										<ul class="nav">
+											<li>
+												<a>Sarees</a>
+
+
+												</li>
+
+											</ul>
+
+										</li>
+
+									</ul>							
+								</li>
+							
+							</ul>
+				
+					</li>
+			
+					<hr>
+			  		<li class="active"><h4>Price</h4> <div id="slider" class="slider-style"></div><script>
+					    //<!--
+					      $("#slider").rangeSlider();
+					    //-->
+					    </script></li><hr>
+			  		<li class="active"><h4>Location</h4></li><hr>
+			  		<li class="active"><h4>Size</h4></li><hr>
+			  		<li class="active"><h4>Colour</h4></li><hr>
+			  		<li class="active"><h4>Discount</h4></li><hr>
+			  		<li class="active"><h4>Occassion</h4></li>
+				</ul>
+	    	</div> <!-- /sidebar -->
+		</div>
+		<div class="col-lg-9">
+			<div class="row">
+				<div class="col-lg-8">
+				<p><em>Displaying 500 results for "Sarees in South Delhi"</em></p>
+				</div>
+				<div class="col-lg-4">
+					<div class="row">
+						<div class="col-lg-4 col-lg-offset-3"> <p class="sortby">Sort by:</p> </div>
+						<div class="col-lg-5">
+							<div class="btn-group">
+					  			<button type="button" class="btn btn-sm btn-default dropdown-toggle" data-toggle="dropdown">
+					    			Relevance  &nbsp;<span class="caret"></span>
+					  			</button>
+					  			<ul class="dropdown-menu" role="menu">
+					    			<li><a href="#">Relevance</a></li>
+					    			<li><a href="#">Price (High to Low)</a></li>
+					    			<li><a href="#">Price (Low to High)</a></li>
+					    			<li><a href="#">Name (A-Z)</a></li>
+					    			<li><a href="#">Name (Z-A)</a></li>
+					  			</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<br>
+			<div class="row">	
+	        <div class="col-lg-3">
+				<div class="thumbnail">
+			      <img src="img/featured-product-1.jpg" alt="...">
+			      <div class="caption">
+			        <p class="product-name">Supernet Cotton Saree</p>
+					<p class="store-name">Store XYZ, Hauz Khas Village</p>
+			        <p class="price"><span class="WebRupee">Rs.</span> 1,500</p>
+			        <p><a href="#" class="btn btn-primary">See More &raquo;</a></p>
+			      </div>
+			    </div>
+	        </div>
+	        <div class="col-lg-3">
+				<div class="thumbnail">
+			      <img src="img/featured-product-2.jpg" alt="...">
+			      <div class="caption">
+			        <p class="product-name">Supernet Cotton Saree</p>
+					<p class="store-name">Store XYZ, Hauz Khas Village</p>
+			        <p class="price"><span class="WebRupee">Rs.</span> 1,500</p>
+			        <p><a href="#" class="btn btn-primary">See More &raquo;</a></p>
+			      </div>
+			    </div>
+	        </div>
+	        <div class="col-lg-3">
+				<div class="thumbnail">
+			      <img src="img/featured-product-1.jpg" alt="...">
+			      <div class="caption">
+			        <p class="product-name">Supernet Cotton Saree</p>
+					<p class="store-name">Store XYZ, Hauz Khas Village</p>
+			        <p class="price"><span class="WebRupee">Rs.</span> 1,500</p>
+			        <p><a href="#" class="btn btn-primary">See More &raquo;</a></p>
+			      </div>
+			    </div>
+	        </div>
+	        <div class="col-lg-3">
+				<div class="thumbnail">
+			      <img src="img/featured-product-2.jpg" alt="...">
+			      <div class="caption">
+			        <p class="product-name">Supernet Cotton Saree</p>
+					<p class="store-name">Store XYZ, Hauz Khas Village</p>
+			        <p class="price"><span class="WebRupee">Rs.</span> 1,500</p>
+			        <p><a href="#" class="btn btn-primary">See More &raquo;</a></p>
+			      </div>
+			    </div>
+	        </div>
+			
+			</div>
+			<br>
+				<div class="row">	
+		        <div class="col-lg-3">
+					<div class="thumbnail">
+				      <img src="img/featured-product-1.jpg" alt="...">
+				      <div class="caption">
+				        <p class="product-name">Supernet Cotton Saree</p>
+						<p class="store-name">Store XYZ, Hauz Khas Village</p>
+				        <p class="price"><span class="WebRupee">Rs.</span> 1,500</p>
+				        <p><a href="#" class="btn btn-primary">See More &raquo;</a></p>
+				      </div>
+				    </div>
+		        </div>
+		        <div class="col-lg-3">
+					<div class="thumbnail">
+				      <img src="img/featured-product-2.jpg" alt="...">
+				      <div class="caption">
+				        <p class="product-name">Supernet Cotton Saree</p>
+						<p class="store-name">Store XYZ, Hauz Khas Village</p>
+				        <p class="price"><span class="WebRupee">Rs.</span> 1,500</p>
+				        <p><a href="#" class="btn btn-primary">See More &raquo;</a></p>
+				      </div>
+				    </div>
+		        </div>
+		        <div class="col-lg-3">
+					<div class="thumbnail">
+				      <img src="img/featured-product-1.jpg" alt="...">
+				      <div class="caption">
+				        <p class="product-name">Supernet Cotton Saree</p>
+						<p class="store-name">Store XYZ, Hauz Khas Village</p>
+				        <p class="price"><span class="WebRupee">Rs.</span> 1,500</p>
+				        <p><a href="#" class="btn btn-primary">See More &raquo;</a></p>
+				      </div>
+				    </div>
+		        </div>
+		        <div class="col-lg-3">
+					<div class="thumbnail">
+				      <img src="img/featured-product-2.jpg" alt="...">
+				      <div class="caption">
+				        <p class="product-name">Supernet Cotton Saree</p>
+						<p class="store-name">Store XYZ, Hauz Khas Village</p>
+				        <p class="price"><span class="WebRupee">Rs.</span> 1,500</p>
+				        <p><a href="#" class="btn btn-primary">See More &raquo;</a></p>
+				      </div>
+				    </div>
+		        </div>
+
+				</div>
+			<br>
+					<div class="row">	
+			        <div class="col-lg-3">
+						<div class="thumbnail">
+					      <img src="img/featured-product-1.jpg" alt="...">
+					      <div class="caption">
+					        <p class="product-name">Supernet Cotton Saree</p>
+							<p class="store-name">Store XYZ, Hauz Khas Village</p>
+					        <p class="price"><span class="WebRupee">Rs.</span> 1,500</p>
+					        <p><a href="#" class="btn btn-primary">See More &raquo;</a></p>
+					      </div>
+					    </div>
+			        </div>
+			        <div class="col-lg-3">
+						<div class="thumbnail">
+					      <img src="img/featured-product-2.jpg" alt="...">
+					      <div class="caption">
+					        <p class="product-name">Supernet Cotton Saree</p>
+							<p class="store-name">Store XYZ, Hauz Khas Village</p>
+					        <p class="price"><span class="WebRupee">Rs.</span> 1,500</p>
+					        <p><a href="#" class="btn btn-primary">See More &raquo;</a></p>
+					      </div>
+					    </div>
+			        </div>
+			        <div class="col-lg-3">
+						<div class="thumbnail">
+					      <img src="img/featured-product-1.jpg" alt="...">
+					      <div class="caption">
+					        <p class="product-name">Supernet Cotton Saree</p>
+							<p class="store-name">Store XYZ, Hauz Khas Village</p>
+					        <p class="price"><span class="WebRupee">Rs.</span> 1,500</p>
+					        <p><a href="#" class="btn btn-primary">See More &raquo;</a></p>
+					      </div>
+					    </div>
+			        </div>
+			        <div class="col-lg-3">
+						<div class="thumbnail">
+					      <img src="img/featured-product-2.jpg" alt="...">
+					      <div class="caption">
+					        <p class="product-name">Supernet Cotton Saree</p>
+							<p class="store-name">Store XYZ, Hauz Khas Village</p>
+					        <p class="price"><span class="WebRupee">Rs.</span> 1,500</p>
+					        <p><a href="#" class="btn btn-primary">See More &raquo;</a></p>
+					      </div>
+					    </div>
+			        </div>
+
+					</div>	
+					
+			
+	    </div> <!-- /span -->
+	  </div> <!-- /row -->
+	</div> <!-- /container -
+
+
+</body>
+</html>
