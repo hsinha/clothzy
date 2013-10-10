@@ -1,4 +1,31 @@
 /* Move down content because we have a fixed navbar that is 50px tall */
+
+@font-face{
+	font-family: 'HelveticaNeue';
+	src: url('../fonts/HelveticaNeue-Roman.otf');
+}
+
+@font-face{
+	font-family: 'HelveticaNeue';
+	src: url('../fonts/HelveticaNeueBold.ttf');
+
+}
+
+@font-face{
+	font-family: 'HelveticaNeue UltraLight';
+	src: url('../fonts/HelveticaNeue-UltraLight.otf');
+
+}
+
+@font-face{
+	font-family: 'HelveticaNeue Light';
+	src: url('../fonts/HelveticaNeue-Thin.otf');
+
+}
+
+
+
+
 body {
   padding-top: 50px;
 
@@ -23,7 +50,7 @@ a.logo{
 	box-shadow: 0px 4px 12px #aaaaaa;
 }
 .search-text{
-	font-family:HelveticaNeue-UltraLight;
+	font-family:'HelveticaNeue UltraLight';
 	margin-top:0px;
 	
 }
@@ -35,7 +62,7 @@ a.logo{
 
 .body-head{
 	
-	font-family:HelveticaNeue-Light;
+	font-family:'HelveticaNeue Light', Helvetica, Arial, sans-serif;
 	font-size:24px;
 	color:#666666;
 }
