@@ -107,14 +107,17 @@ max-height:60px;
 
 /* SIDEBAR STUFF */
 .sidebar-nav-fixed {
+	/*
     position:fixed;
 	top:80px;
 	width:250px;
-
+		*/
 }
 
 .sidebar-nav-fixed .nav > li > a {
 	padding-left:5px;
+	padding-bottom:2px;
+	padding-top:5px;
 	font-size:16px;
 	color:#666666;
 	
@@ -150,6 +153,19 @@ max-height:60px;
 	
 }
 
+.sidebar-divider{
+	
+	margin-top: 10px;
+	margin-left:10px;
+	margin-right:20px;
+	margin-bottom: 0px;
+	border: 0;
+	border-top: 1px solid #D5D5D5;
+	
+	
+	
+}
+
 .pad-50{
 	padding-top:30px;
 	
@@ -168,4 +184,36 @@ max-height:60px;
 	padding-left:10px;
 	padding-right:10px;
 	
+}
+
+/*BADGES*/
+
+.blue-colour{
+	background-color:#75AFFF;	
+}
+.red-colour{
+	background-color:#cc0000;	
+}
+.green-colour{
+	background-color:#88E876;	
+}
+.yellow-colour{
+	background-color:#E7E939;	
+}
+.black-colour{
+	background-color:#111211;	
+}
+.multi-colour{
+	background-color:#636862;	
+}
+
+/*SLIDERS*/
+
+.slider-label{
+	display:inline-block;
+	
+}
+.inline1{
+	
+	display:inline-block;
 }
