@@ -4973,6 +4973,11 @@ a.list-group-item.active > .badge,
   height: auto;
   max-width: 100%;
 }
+.thumbnail > a > img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
 
 a.thumbnail:hover,
 a.thumbnail:focus {

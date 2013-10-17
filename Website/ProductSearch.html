@@ -260,15 +260,35 @@
 				</div>
 			</div>
 			<br>
+			<!-- Button trigger modal -\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+		  <!-- Modal -->
+		  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		    <div class="modal-dialog">
+		      <div class="modal-content">
+		        <div class="modal-header">
+		          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		          <h4 class="modal-title">Supernet Cotton Saree</h4>
+		        </div>
+		        <div class="modal-body">
+		          ...
+		        </div>
+		        <div class="modal-footer">
+		          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		          <button type="button" class="btn btn-primary">Save changes</button>
+		        </div>
+		      </div><!-- /.modal-content -->
+		    </div><!-- /.modal-dialog -->
+		  </div><!-- /.modal -->
 			<div class="row">	
 	        <div class="col-lg-3">
 				<div class="thumbnail">
-			      <img src="img/featured-product-1.jpg" alt="...">
+			      <a data-toggle="modal" href="#myModal"><img src="img/featured-product-1.jpg" alt="..."></a>
 			      <div class="caption">
 			        <p class="product-name">Supernet Cotton Saree</p>
 					<p class="store-name">Store XYZ, Hauz Khas Village</p>
 			        <p class="price"><span class="WebRupee">Rs.</span> 1,500</p>
-			        <p><a href="#" class="btn btn-primary">See More &raquo;</a></p>
+			        <p><a data-toggle="modal" class="btn btn-primary" href="#myModal">See More &raquo;</a></p>
 			      </div>
 			    </div>
 	        </div>
@@ -354,7 +374,6 @@
 				    </div>
 		        </div>
 
-				</div>
 			<br>
 					<div class="row">	
 			        <div class="col-lg-3">
