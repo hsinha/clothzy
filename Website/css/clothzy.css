@@ -244,11 +244,27 @@ max-height:60px;
 }
 
 .right-border{
-	border-right: 1px solid #cccccc;;
+	border-right: 1px solid #cccccc;
 }
 
 .small-icon{
 	font-size:20px;
 	color:#428bca;
+	
+}
+
+.img-enlarged{
+	box-shadow: 0px 0px 12px #ddd;
+	border: 1px solid #eee;
+	
+}
+
+.gold{
+	color: #428bca ;	
+}
+
+.subtext{
+font-size:12px;
+margin-left:15px;
 	
 }
