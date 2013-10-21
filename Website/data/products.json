@@ -1,0 +1,22 @@
+{
+   "products": [
+      {
+         "name": "Levis Blue Denim",
+         "imgPath": "img/prods/p1.jpg",
+         "store":  "Store XYZ, Hauz Khas Village",
+         "price": "1500"
+      },
+      {
+         "name": "Pepe Black Jeans",
+         "imgPath": "img/prods/p2.jpg",
+         "store":  "Store ABC, Hauz Khas Village",
+         "price": "1200"
+      },
+      {
+         "name": "Pepe Blue Jeans",
+         "imgPath": "img/prods/p3.jpg",
+         "store":  "Store DEF, Hauz Khas Village",
+         "price": "3500"
+      }
+  ]
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html ng-app = "masterApp">
+  <head>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="Kartik Dhar">
+    
+	<link rel="shortcut icon" href="ico/favicon.png">
+	
+	<!--Angular.JS link-->
+	<script src="js/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>	
+
+    <script src="js/jquery.nouislider.js"></script>
+	
+	
+
+	<title>XYZ Store, South Delhi</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom CSS for site -->
+    <link href="css/clothzy.css" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="http://cdn.webrupee.com/font">
+    <link rel="stylesheet" href="css/iThing.css" type="text/css" />
+	<link rel="stylesheet" href="css/jquery.nouislider.css" type="text/css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../../assets/js/html5shiv.js"></script>
+      <script src="../../assets/js/respond.min.js"></script>
+    <![endif]-->
+
+
+	<script>
+			// on document ready
+			$(function(){
+				// run noUiSlider
+				$('.noUiSlider').noUiSlider({
+					 range: [10,40]
+					,start: [20,30]
+				});
+			});		
+		</script>
+
+  </head>
+
+<body>
+	
+	<div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="logo" href="#"><img src="img/Logo.png" /></a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">New Delhi <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li class="dropdown-header">NCR</li>
+                <li><a href="#">New Delhi</a></li>
+                <li><a href="#">Gurgaon</a></li>
+				<li><a href="#">Noida</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Mumbai</a></li>
+                <li><a href="#">Bangalore</a></li>
+
+              </ul>
+            </li>	
+            <li><a href="#">Women</a></li>
+            <li><a href="#about">Men</a></li>
+            <li><a href="#contact">Kids</a></li>
+			<li>
+			<form class="navbar-form">
+			<div class="form-group">
+              <input type="text" placeholder="Lajpat Nagar" class="form-control input-sm" style="width:400px">
+		    </div>
+		        <button class="btn btn-danger btn-sm" type="button"><span class="glyphicon glyphicon-search"></span></button>
+		 
+        
+			</form>
+			</li>
+			</ul>
+			<ul class=" nav navbar-right navbar-nav">
+			<li><a href="#login">Login</a></li>
+            <li><a href="#about">Sign Up</a></li>
+			
+          </ul>
+
+        </div><!--/.navbar-collapse -->
+      </div>
+    </div>
+	
+
+<div class="container pad-50" id="main">
+		<div ng-view></div>
+</div>
+<footer class="footer">
+
+	<p>&copy; Clothzy 2013 · 
+	<a href="#">About · </a>
+	<a href="#">Privacy Policy · </a>
+	<a href="#">Register your store · </a>
+	<a href="#">Contact Us  </a></p>
+	
+</footer>
+
+
+
+	<script src="js/bootstrap.min.js"></script>
+	 <!-- App libs -->
+    <script src="app/app.js"></script>
+    <script src="app/controllers/controllers.js"></script>
+    <script src="app/services/productsService.js"></script>
+
+</body>
+</html>
