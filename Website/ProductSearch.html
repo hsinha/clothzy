@@ -14,7 +14,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>	
 
     <script src="js/jquery.nouislider.js"></script>
-	
+	<script src="js/affix.js"></script>
 	
 
 	<title>Search Results: Sarees in South Delhi</title>
@@ -28,6 +28,7 @@
 	<link rel="stylesheet" type="text/css" href="http://cdn.webrupee.com/font">
     <link rel="stylesheet" href="css/iThing.css" type="text/css" />
 	<link rel="stylesheet" href="css/jquery.nouislider.css" type="text/css">
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="../../assets/js/html5shiv.js"></script>
@@ -49,6 +50,110 @@
   </head>
 
 <body>
+
+	<!--CUSTOMER LOGIN MODAL-->
+
+	<div class="modal fade" id="LoginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	    <div class="modal-dialog modal-form">
+	      <div class="modal-content">
+	        <div class="modal-header">
+	          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+ 	          <h4 class="modal-title product-header">Login to Clothzy</h4>
+	        </div>
+	        <div class="modal-body">
+	          	<form class="form-horizontal" role="form">
+				  <div class="form-group">
+				    <label for="inputEmail1" class="col-lg-2 control-label">Email</label>
+				    <div class="col-lg-10">
+				      <input type="email" class="form-control" id="inputEmail1" placeholder="Email">
+				    </div>
+				  </div>
+				  <div class="form-group">
+				    <label for="inputPassword1" class="col-lg-2 control-label">Password</label>
+				    <div class="col-lg-10">
+				      <input type="password" class="form-control" id="inputPassword1" placeholder="Password">
+				    </div>
+				  </div>
+				  <div class="form-group">
+				    <div class="col-lg-offset-2 col-lg-10">
+				      <div class="checkbox">
+				        <label>
+				          <input type="checkbox"> Remember me
+				        </label>
+				      </div>
+				    </div>
+				  </div>
+		
+				
+				  <div class="form-group">
+				    <div class="col-lg-offset-2 col-lg-10">
+				      <button type="submit" class="btn btn-danger">Sign in</button>
+				    </div>
+				  </div><hr>
+				
+				  <div class="form-group">
+					<h4 class="text-center">OR</h4>
+				    <div class="col-lg-offset-1 col-lg-5">
+						<a class="btn btn-primary btn-facebook" href="#"><i class="icon-facebook facebook-login-icon icon-2x"></i> <span class="facebook-login-text">Sign in with Facebook</span></a>
+				    </div>
+				    <div class="col-lg-5">
+						<a class="btn btn-danger btn-google" style="width: 100%"  href="#"><i class="icon-google-plus icon-2x"></i> Sign in with Google</a>
+				    </div>
+				  </div>
+				
+				</form>
+	        </div>
+
+	      </div><!-- /.modal-content -->
+	    </div><!-- /.modal-dialog -->
+	  </div><!-- /.modal -->
+
+<!--STORE LOGIN MODAL-->
+
+	<div class="modal fade" id="StoreLoginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	    <div class="modal-dialog modal-form">
+	      <div class="modal-content">
+	        <div class="modal-header">
+	          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+ 	          <h4 class="modal-title product-header">Store Login</h4>
+	        </div>
+	        <div class="modal-body">
+	          	<form class="form-horizontal" role="form">
+				  <div class="form-group">
+				    <label for="inputEmail1" class="col-lg-2 control-label">Username</label>
+				    <div class="col-lg-10">
+				      <input type="email" class="form-control" id="inputEmail1" placeholder="Email">
+				    </div>
+				  </div>
+				  <div class="form-group">
+				    <label for="inputPassword1" class="col-lg-2 control-label">Password</label>
+				    <div class="col-lg-10">
+				      <input type="password" class="form-control" id="inputPassword1" placeholder="Password">
+				    </div>
+				  </div>
+				  <div class="form-group">
+				    <div class="col-lg-offset-2 col-lg-10">
+				      <div class="checkbox">
+				        <label>
+				          <input type="checkbox"> Remember me
+				        </label>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="form-group">
+				    <div class="col-lg-offset-2 col-lg-10">
+				      <button type="submit" class="btn btn-danger">Sign in</button>
+				    </div>
+				  </div>
+				</form>
+	        </div>
+
+	      </div><!-- /.modal-content -->
+	    </div><!-- /.modal-dialog -->
+	  </div><!-- /.modal -->
+
+
+
 	
 	<div class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
@@ -90,7 +195,7 @@
 			</li>
 			</ul>
 			<ul class=" nav navbar-right navbar-nav">
-			<li><a href="#login">Login</a></li>
+			<li><a data-toggle="modal" href="#LoginModal">Login</a></li>
             <li><a href="#about">Sign Up</a></li>
 			
           </ul>
@@ -102,7 +207,7 @@
 	<div class="container pad-50">
 		
 		<div class="col-lg-3">
-			<div class=" navbar navbar-default sidebar-nav-fixed">
+			<div class=" navbar navbar-default sidebar-nav-fixed"  data-spy="affix"  data-offset-top="750">
 				<ul class="nav nav-stacked sidebar-text">
 			  		<li class="active"><a>Category</a>
 						<ul class="nav">
@@ -219,7 +324,7 @@
 	
 		</div>
 		<div class="col-lg-9">
-			<div class="row">
+			<div class="row"><br>
 				<div class="col-lg-6">
 				<ol class="breadcrumb">
 				  <li><a href="#">Home</a></li>
@@ -263,6 +368,10 @@
 			<!-- Button trigger modal -\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 			
 			 Modal -->
+			
+
+			
+			
 		  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 		    <div class="modal-dialog">
 		      <div class="modal-content">
@@ -309,7 +418,7 @@
 											
 											</div>
 										<div class="col-lg-8">
-								<p>		<span class="badge blue-colour">&nbsp;</span> Purple </p>
+								<p>		<span class="badge purple-colour">&nbsp;</span> Purple </p>
 											
 											</div>
 										</div>
@@ -528,6 +637,201 @@
 			        </div>
 				
 					</div>	
+					
+					<div class="row">	
+			        <div class="col-lg-3">
+						<div class="thumbnail">
+					      <a data-toggle="modal" href="#myModal"><img src="img/featured-product-1.jpg" alt="..."></a>
+					      <div class="caption">
+					        <p class="product-name">Supernet Cotton Saree</p>
+							<p class="store-name">Store XYZ, Hauz Khas Village</p>
+					        <p class="price"><span class="WebRupee">Rs.</span> 1,500</p>
+					        <p><a href="#" class="btn btn-primary">See More &raquo;</a></p>
+					      </div>
+					    </div>
+			        </div>
+			        <div class="col-lg-3">
+						<div class="thumbnail">
+					      <a data-toggle="modal" href="#myModal"><img src="img/featured-product-2.jpg" alt="..."></a>
+					      <div class="caption">
+					        <p class="product-name">Supernet Cotton Saree</p>
+							<p class="store-name">Store XYZ, Hauz Khas Village</p>
+					        <p class="price"><span class="WebRupee">Rs.</span> 1,500</p>
+					        <p><a href="#" class="btn btn-primary">See More &raquo;</a></p>
+					      </div>
+					    </div>
+			        </div>
+			        <div class="col-lg-3">
+						<div class="thumbnail">
+					      <a data-toggle="modal" href="#myModal"><img src="img/featured-product-1.jpg" alt="..."></a>
+					      <div class="caption">
+					        <p class="product-name">Supernet Cotton Saree</p>
+							<p class="store-name">Store XYZ, Hauz Khas Village</p>
+					        <p class="price"><span class="WebRupee">Rs.</span> 1,500</p>
+					        <p><a href="#" class="btn btn-primary">See More &raquo;</a></p>
+					      </div>
+					    </div>
+			        </div>
+			        <div class="col-lg-3">
+						<div class="thumbnail">
+					      <a data-toggle="modal" href="#myModal"><img src="img/featured-product-2.jpg" alt="..."></a>
+					      <div class="caption">
+					        <p class="product-name">Supernet Cotton Saree</p>
+							<p class="store-name">Store XYZ, Hauz Khas Village</p>
+					        <p class="price"><span class="WebRupee">Rs.</span> 1,500</p>
+					        <p><a href="#" class="btn btn-primary">See More &raquo;</a></p>
+					      </div>
+					    </div>
+			        </div>
+				
+					</div>
+					<br>
+					<div class="row">	
+			        <div class="col-lg-3">
+						<div class="thumbnail">
+					      <a data-toggle="modal" href="#myModal"><img src="img/featured-product-1.jpg" alt="..."></a>
+					      <div class="caption">
+					        <p class="product-name">Supernet Cotton Saree</p>
+							<p class="store-name">Store XYZ, Hauz Khas Village</p>
+					        <p class="price"><span class="WebRupee">Rs.</span> 1,500</p>
+					        <p><a href="#" class="btn btn-primary">See More &raquo;</a></p>
+					      </div>
+					    </div>
+			        </div>
+			        <div class="col-lg-3">
+						<div class="thumbnail">
+					      <a data-toggle="modal" href="#myModal"><img src="img/featured-product-2.jpg" alt="..."></a>
+					      <div class="caption">
+					        <p class="product-name">Supernet Cotton Saree</p>
+							<p class="store-name">Store XYZ, Hauz Khas Village</p>
+					        <p class="price"><span class="WebRupee">Rs.</span> 1,500</p>
+					        <p><a href="#" class="btn btn-primary">See More &raquo;</a></p>
+					      </div>
+					    </div>
+			        </div>
+			        <div class="col-lg-3">
+						<div class="thumbnail">
+					      <a data-toggle="modal" href="#myModal"><img src="img/featured-product-1.jpg" alt="..."></a>
+					      <div class="caption">
+					        <p class="product-name">Supernet Cotton Saree</p>
+							<p class="store-name">Store XYZ, Hauz Khas Village</p>
+					        <p class="price"><span class="WebRupee">Rs.</span> 1,500</p>
+					        <p><a href="#" class="btn btn-primary">See More &raquo;</a></p>
+					      </div>
+					    </div>
+			        </div>
+			        <div class="col-lg-3">
+						<div class="thumbnail">
+					      <a data-toggle="modal" href="#myModal"><img src="img/featured-product-2.jpg" alt="..."></a>
+					      <div class="caption">
+					        <p class="product-name">Supernet Cotton Saree</p>
+							<p class="store-name">Store XYZ, Hauz Khas Village</p>
+					        <p class="price"><span class="WebRupee">Rs.</span> 1,500</p>
+					        <p><a href="#" class="btn btn-primary">See More &raquo;</a></p>
+					      </div>
+					    </div>
+			        </div>
+				
+					</div>
+					<br>
+					<div class="row">	
+			        <div class="col-lg-3">
+						<div class="thumbnail">
+					      <a data-toggle="modal" href="#myModal"><img src="img/featured-product-1.jpg" alt="..."></a>
+					      <div class="caption">
+					        <p class="product-name">Supernet Cotton Saree</p>
+							<p class="store-name">Store XYZ, Hauz Khas Village</p>
+					        <p class="price"><span class="WebRupee">Rs.</span> 1,500</p>
+					        <p><a href="#" class="btn btn-primary">See More &raquo;</a></p>
+					      </div>
+					    </div>
+			        </div>
+			        <div class="col-lg-3">
+						<div class="thumbnail">
+					      <a data-toggle="modal" href="#myModal"><img src="img/featured-product-2.jpg" alt="..."></a>
+					      <div class="caption">
+					        <p class="product-name">Supernet Cotton Saree</p>
+							<p class="store-name">Store XYZ, Hauz Khas Village</p>
+					        <p class="price"><span class="WebRupee">Rs.</span> 1,500</p>
+					        <p><a href="#" class="btn btn-primary">See More &raquo;</a></p>
+					      </div>
+					    </div>
+			        </div>
+			        <div class="col-lg-3">
+						<div class="thumbnail">
+					      <a data-toggle="modal" href="#myModal"><img src="img/featured-product-1.jpg" alt="..."></a>
+					      <div class="caption">
+					        <p class="product-name">Supernet Cotton Saree</p>
+							<p class="store-name">Store XYZ, Hauz Khas Village</p>
+					        <p class="price"><span class="WebRupee">Rs.</span> 1,500</p>
+					        <p><a href="#" class="btn btn-primary">See More &raquo;</a></p>
+					      </div>
+					    </div>
+			        </div>
+			        <div class="col-lg-3">
+						<div class="thumbnail">
+					      <a data-toggle="modal" href="#myModal"><img src="img/featured-product-2.jpg" alt="..."></a>
+					      <div class="caption">
+					        <p class="product-name">Supernet Cotton Saree</p>
+							<p class="store-name">Store XYZ, Hauz Khas Village</p>
+					        <p class="price"><span class="WebRupee">Rs.</span> 1,500</p>
+					        <p><a href="#" class="btn btn-primary">See More &raquo;</a></p>
+					      </div>
+					    </div>
+			        </div>
+				
+					</div>
+					<br>
+					<div class="row">	
+			        <div class="col-lg-3">
+						<div class="thumbnail">
+					      <a data-toggle="modal" href="#myModal"><img src="img/featured-product-1.jpg" alt="..."></a>
+					      <div class="caption">
+					        <p class="product-name">Supernet Cotton Saree</p>
+							<p class="store-name">Store XYZ, Hauz Khas Village</p>
+					        <p class="price"><span class="WebRupee">Rs.</span> 1,500</p>
+					        <p><a href="#" class="btn btn-primary">See More &raquo;</a></p>
+					      </div>
+					    </div>
+			        </div>
+			        <div class="col-lg-3">
+						<div class="thumbnail">
+					      <a data-toggle="modal" href="#myModal"><img src="img/featured-product-2.jpg" alt="..."></a>
+					      <div class="caption">
+					        <p class="product-name">Supernet Cotton Saree</p>
+							<p class="store-name">Store XYZ, Hauz Khas Village</p>
+					        <p class="price"><span class="WebRupee">Rs.</span> 1,500</p>
+					        <p><a href="#" class="btn btn-primary">See More &raquo;</a></p>
+					      </div>
+					    </div>
+			        </div>
+			        <div class="col-lg-3">
+						<div class="thumbnail">
+					      <a data-toggle="modal" href="#myModal"><img src="img/featured-product-1.jpg" alt="..."></a>
+					      <div class="caption">
+					        <p class="product-name">Supernet Cotton Saree</p>
+							<p class="store-name">Store XYZ, Hauz Khas Village</p>
+					        <p class="price"><span class="WebRupee">Rs.</span> 1,500</p>
+					        <p><a href="#" class="btn btn-primary">See More &raquo;</a></p>
+					      </div>
+					    </div>
+			        </div>
+			        <div class="col-lg-3">
+						<div class="thumbnail">
+					      <a data-toggle="modal" href="#myModal"><img src="img/featured-product-2.jpg" alt="..."></a>
+					      <div class="caption">
+					        <p class="product-name">Supernet Cotton Saree</p>
+							<p class="store-name">Store XYZ, Hauz Khas Village</p>
+					        <p class="price"><span class="WebRupee">Rs.</span> 1,500</p>
+					        <p><a href="#" class="btn btn-primary">See More &raquo;</a></p>
+					      </div>
+					    </div>
+			        </div>
+				
+					</div>
+																									
+					
+					
 						<ul class="pagination pull-right pagination-sm">
 						  <li><a href="#">&laquo;</a></li>
 						  <li class="active"><a href="#">1</a></li>
@@ -545,11 +849,12 @@
 <footer class="footer">
 	
 	<p>&copy; Clothzy 2013 · 
-	<a href="#">About · </a>
-	<a href="#">Privacy Policy · </a>
-	<a href="#">Register your store · </a>
+	<a href="#">About</a> · 
+	<a href="#">Privacy Policy</a> · 
+	<a  data-toggle="modal" href="#StoreLoginModal">Store Login</a> · 
+	<a href="#">Register your store</a> · 
 	<a href="#">Contact Us  </a></p>
-	
+
 </footer>
 
 

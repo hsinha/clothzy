@@ -24,11 +24,9 @@
 }
 
 
-
-
 body {
   padding-top: 50px;
-
+  position:relative;
   margin-bottom: 0px;
 }
 
@@ -107,11 +105,11 @@ max-height:60px;
 
 /* SIDEBAR STUFF */
 .sidebar-nav-fixed {
-	/*
-    position:fixed;
-	top:80px;
+	
+
+	top:30px;
 	width:250px;
-		*/
+		
 }
 
 .sidebar-nav-fixed .nav > li > a {
@@ -161,9 +159,15 @@ max-height:60px;
 	margin-bottom: 0px;
 	border: 0;
 	border-top: 1px solid #D5D5D5;
+}
+
+.affix{
+
+top:-750px;
 	
-	
-	
+}
+
+
 }
 
 .pad-50{
@@ -210,6 +214,11 @@ max-height:60px;
 .black-colour{
 	background-color:#111211;	
 }
+
+.purple-colour{
+	background-color:#593E99;	
+}
+
 .multi-colour{
 	background-color:#636862;	
 }
@@ -243,6 +252,9 @@ max-height:60px;
 	
 }
 
+
+
+
 .right-border{
 	border-right: 1px solid #cccccc;
 }
@@ -267,4 +279,47 @@ max-height:60px;
 font-size:12px;
 margin-left:15px;
 	
+}
+
+/*PRODUCT PAGE*/
+.product-header{
+	
+	font-family:'HelveticaNeue Light', Helvetica, Arial, sans-serif;
+
+	font-size:24px;
+	color:#666;	
+	
+}
+
+
+/*LOGIN MODAL*/
+
+.modal-form{
+	
+	padding-top: 130px;
+	width: 600px;
+	
+}
+
+.btn-google{
+	background-color:#df4a32;	
+}
+
+.btn-facebook{
+	background-color:#5f78ae;	
+	display: inline-block;
+
+	
+
+}
+.facebook-login-icon{
+	   line-height: 50px;
+	 vertical-align: middle;
+	display:inline-block;
+}
+
+.facebook-login-text{
+	 vertical-align: middle;
+	width:90%;
+		display:inline-block;
 }
