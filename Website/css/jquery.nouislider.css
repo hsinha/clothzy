@@ -43,14 +43,14 @@
  *		box-sizing, so it needs to applied manually.
  */
 	.noUi-handle {
-		background: #cccccc;
+		background: #F07241;
 		height: 15px;
 		width: 5px;
-		border: 1px solid #BFBFBF;
+
 		margin: -5px 0 0 0px;
 	}
 	.noUi-active {
-		background: #E9E9E9;
+		background: #C04848;
 	}
 	.noUi-active:after {
 -webkit-box-sizing: border-box;
@@ -59,7 +59,7 @@
 		content: "";
 		display: block;
 		height: 100%;
-		border: 1px solid #DDD;
+
 	}
 
 /*	Styling-only classes;
@@ -70,7 +70,7 @@
 		background: Teal;
 	}
 	.noUi-background {
-		background: #DDD;
+		background: #ddd;
 	}
 
 /*	Functional styles for handle positioning;
@@ -90,7 +90,7 @@
 	}
 	
 	.noUi-origin-lower {
-		background:#9ECCFF;
+		background:#aaa;
 	}
 	
 	.noUi-z-index {

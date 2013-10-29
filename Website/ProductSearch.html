@@ -25,10 +25,9 @@
     <!-- Custom CSS for site -->
     <link href="css/clothzy.css" rel="stylesheet">
 
-	<link rel="stylesheet" type="text/css" href="http://cdn.webrupee.com/font">
     <link rel="stylesheet" href="css/iThing.css" type="text/css" />
 	<link rel="stylesheet" href="css/jquery.nouislider.css" type="text/css">
-	<link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="../../assets/js/html5shiv.js"></script>
@@ -94,10 +93,12 @@
 				  <div class="form-group">
 					<h4 class="text-center">OR</h4>
 				    <div class="col-lg-offset-1 col-lg-5">
-						<a class="btn btn-primary btn-facebook" href="#"><i class="icon-facebook facebook-login-icon icon-2x"></i> <span class="facebook-login-text">Sign in with Facebook</span></a>
+						<a class="btn btn-primary btn-facebook btn-block" href="#">
+						  <i class="fa fa-facebook fa-lg"></i> Sign in with Facebook</a>
 				    </div>
 				    <div class="col-lg-5">
-						<a class="btn btn-danger btn-google" style="width: 100%"  href="#"><i class="icon-google-plus icon-2x"></i> Sign in with Google</a>
+						<a class="btn btn-danger btn-google btn-block" href="#">
+						  <i class="fa fa-google-plus fa-lg"></i> Sign in with Google</a>					
 				    </div>
 				  </div>
 				
@@ -108,13 +109,171 @@
 	    </div><!-- /.modal-dialog -->
 	  </div><!-- /.modal -->
 
+
+	<!--CUSTOMER SIGNUP MODAL-->
+
+	<div class="modal fade" id="SignupModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	    <div class="modal-dialog modal-form">
+	      <div class="modal-content">
+	        <div class="modal-header">
+	          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+ 	          <h4 class="modal-title product-header">Register on Clothzy</h4>
+	        </div>
+	        <div class="modal-body">
+	          	<form class="form-horizontal" role="form">
+				  <div class="form-group">
+				    <label for="inputEmail1" class="col-lg-4 control-label">First Name</label>
+				    <div class="col-lg-8">
+				      <input type="email" class="form-control" id="inputfirstname" placeholder="First Name">
+				    </div>
+				  </div>
+				  <div class="form-group">
+				    <label for="inputEmail1" class="col-lg-4 control-label">Last Name</label>
+				    <div class="col-lg-8">
+				      <input type="email" class="form-control" id="inputlastname" placeholder="Last Name">
+				    </div>
+				  </div>				
+
+				  <div class="form-group">
+				    <label for="inputEmail1" class="col-lg-4 control-label">Email</label>
+				    <div class="col-lg-8">
+				      <input type="email" class="form-control" id="inputEmail1" placeholder="Email">
+				    </div>
+				  </div>
+				  <div class="form-group">
+				    <label for="inputPassword1" class="col-lg-4 control-label">Password</label>
+				    <div class="col-lg-8">
+				      <input type="password" class="form-control" id="inputPassword1" placeholder="Password">
+				    </div>
+				  </div>
+				  <div class="form-group">
+				    <div class="col-lg-offset-2 col-lg-10">
+				      <div class="checkbox">
+				        <label>
+				          <input type="checkbox"> Remember me
+				        </label>
+				      </div>
+				    </div>
+				  </div>
+
+
+				  <div class="form-group">
+				    <div class="col-lg-offset-2 col-lg-10">
+				      <button type="submit" class="btn btn-danger">Sign in</button>
+				    </div>
+				  </div><hr>
+
+				  <div class="form-group">
+					<h4 class="text-center">OR</h4>
+				    <div class="col-lg-offset-1 col-lg-5">
+						<a class="btn btn-primary btn-facebook" href="#">
+						  <i class="fa fa-facebook fa-lg"></i> Sign in with Facebook</a>
+				    </div>
+				    <div class="col-lg-5">
+						<a class="btn btn-danger btn-google" href="#">
+						  <i class="fa fa-google-plus fa-lg"></i> Sign in with Google</a>					
+				    </div>
+				  </div>
+
+				</form>
+	        </div>
+
+	      </div><!-- /.modal-content -->
+	    </div><!-- /.modal-dialog -->
+	  </div><!-- /.modal -->
+
+
+	<!--STORE SIGNUP MODAL-->
+
+	<div class="modal fade" id="StoreSignupModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	    <div class="modal-dialog modal-form">
+	      <div class="modal-content">
+	        <div class="modal-header">
+	          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+ 	          <h4 class="modal-title product-header">Register your store on Clothzy</h4>
+	        </div>
+	        <div class="modal-body">
+	          	<form class="form-horizontal" role="form">
+				  <div class="form-group">
+				    <label for="inputEmail1" class="col-lg-4 control-label">Store Name</label>
+				    <div class="col-lg-8">
+				      <input type="email" class="form-control" id="inputfirstname" placeholder="Name of your store">
+				    </div>
+				  </div>
+				  <div class="form-group">
+					    <label for="inputEmail1" class="col-lg-4 control-label">City</label>
+					    <div class="col-lg-8">
+							<select class="form-control">
+							  <option>Delhi/NCR</option>
+							  <option>Mumbai</option>
+							  <option>Bangalore</option>
+							  <option>Hyderabad</option>
+							  <option>Kolkata</option>
+							  <option>Chennai</option>
+							</select>
+					    </div>
+									
+
+				  </div>				
+
+				  <div class="form-group">
+					    <label for="inputEmail1" class="col-lg-4 control-label">Locality</label>
+					    <div class="col-lg-8">
+							<select class="form-control">
+							  <option>South Delhi</option>
+							  <option>Central Delhi</option>
+							  <option>North Delhi</option>
+							  <option>West Delhi</option>
+							  <option>East Delhi</option>
+							  <option>Gurgaon</option>
+							  <option>Noida</option>
+							</select>
+					    </div>
+								
+
+				  </div>
+
+
+				  <div class="form-group">
+				    <label for="inputEmail1" class="col-lg-4 control-label">Email</label>
+				    <div class="col-lg-8">
+				      <input type="email" class="form-control" id="inputEmail1" placeholder="Email">
+				    </div>
+				  </div>
+				  <div class="form-group">
+				    <label for="inputPassword1" class="col-lg-4 control-label">Password</label>
+				    <div class="col-lg-8">
+				      <input type="password" class="form-control" id="inputPassword1" placeholder="Password">
+				    </div>
+				  </div>
+				  <div class="form-group">
+				    <div class="col-lg-offset-2 col-lg-10">
+				      <div class="checkbox">
+				        <label>
+				          <input type="checkbox"> Remember me
+				        </label>
+				      </div>
+				    </div>
+				  </div>
+
+
+
+				</form>
+	        </div>
+
+	      </div><!-- /.modal-content -->
+	    </div><!-- /.modal-dialog -->
+	  </div><!-- /.modal -->
+
+
+
 <!--STORE LOGIN MODAL-->
 
 	<div class="modal fade" id="StoreLoginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 	    <div class="modal-dialog modal-form">
 	      <div class="modal-content">
 	        <div class="modal-header">
-	          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+	          <button type="button" class="close" data-dismiss="modal" ari	a-hidden="true">&times;</button>
  	          <h4 class="modal-title product-header">Store Login</h4>
 	        </div>
 	        <div class="modal-body">
@@ -163,7 +322,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="logo" href="#"><img src="img/Logo.png" /></a>
+          <a class="logo" href="index.html"><img src="img/Logo.png" /></a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
@@ -196,7 +355,7 @@
 			</ul>
 			<ul class=" nav navbar-right navbar-nav">
 			<li><a data-toggle="modal" href="#LoginModal">Login</a></li>
-            <li><a href="#about">Sign Up</a></li>
+            <li><a data-toggle="modal" href="#SignupModal">Sign Up</a></li>
 			
           </ul>
 
@@ -239,14 +398,14 @@
 			  		<li class="active"><a>Price</a>
 				<div class="text-center">
 					<span class="slider-label">
-						<span class="WebRupee">Rs.</span><em><small>0</small></em>
+						<i class="fa fa-rupee"></i><em><small>0</small></em>
 						
 					</span>
 					<div class="inline1">
 					<div class="noUiSlider"></div>
 					</div>
 				 	<span class="slider-label">
-						<span class="WebRupee">Rs.</span><em><small>5,000</small></em>
+						<i class="fa fa-rupee"></i><em><small>5,000</small></em>
 					</span>
 				</div>
 				</li>
@@ -335,7 +494,7 @@
 				</div>
 					<div class="col-lg-6">
 					<ul class="nav navbar-nav navbar-right">
-						
+					
 						<li class="active"><a href="#">Product View</a></li>
 						<li><a href="#">Store View</a></li>
 					</div>
@@ -406,7 +565,7 @@
 											
 											</div>
 										<div class="col-lg-8">
-								<p>		<span class="WebRupee">Rs.</span> 1,500 (0% Discount)</p>
+								<p>		<i class="fa fa-rupee"></i> 1,500 (0% Discount)</p>
 											
 											</div>
 										</div>
@@ -496,7 +655,7 @@
 			      		<div class="caption">
 			        		<p class="product-name">Supernet Cotton Saree</p>
 							<p class="store-name">Store XYZ, Hauz Khas Village</p>
-			        		<p class="price"><span class="WebRupee">Rs.</span> 1,500</p>
+			        		<p class="price"><i class="fa fa-rupee"></i> 1,500</p>
 			        		<p><a data-toggle="modal" class="btn btn-primary" href="#myModal">See More &raquo;</a></p>
 			      		</div>
 			    	</div>
@@ -508,7 +667,7 @@
 			      		<div class="caption">
 			        		<p class="product-name">Supernet Cotton Saree</p>
 							<p class="store-name">Store XYZ, Hauz Khas Village</p>
-			        		<p class="price"><span class="WebRupee">Rs.</span> 1,500</p>
+			        		<p class="price"><i class="fa fa-rupee"></i> 1,500</p>
 			        		<p><a href="#" class="btn btn-primary">See More &raquo;</a></p>
 			      		</div>
 			    	</div>
@@ -520,7 +679,7 @@
 			      		<div class="caption">
 			        		<p class="product-name">Supernet Cotton Saree</p>
 							<p class="store-name">Store XYZ, Hauz Khas Village</p>
-			        		<p class="price"><span class="WebRupee">Rs.</span> 1,500</p>
+			        		<p class="price"><i class="fa fa-rupee"></i> 1,500</p>
 			        		<p><a href="#" class="btn btn-primary">See More &raquo;</a></p>
 			      		</div>
 			    	</div>
@@ -532,7 +691,7 @@
 			      		<div class="caption">
 			        		<p class="product-name">Supernet Cotton Saree</p>
 							<p class="store-name">Store XYZ, Hauz Khas Village</p>
-			        		<p class="price"><span class="WebRupee">Rs.</span> 1,500</p>
+			        		<p class="price"><i class="fa fa-rupee"></i> 1,500</p>
 			        		<p><a href="#" class="btn btn-primary">See More &raquo;</a></p>
 			      		</div>
 			    	</div>
@@ -547,7 +706,7 @@
 				      <div class="caption">
 				        <p class="product-name">Supernet Cotton Saree</p>
 						<p class="store-name">Store XYZ, Hauz Khas Village</p>
-				        <p class="price"><span class="WebRupee">Rs.</span> 1,500</p>
+				        <p class="price"><i class="fa fa-rupee"></i> 1,500</p>
 				        <p><a href="#" class="btn btn-primary">See More &raquo;</a></p>
 				      </div>
 				    </div>
@@ -559,7 +718,7 @@
 				      <div class="caption">
 				        <p class="product-name">Supernet Cotton Saree</p>
 						<p class="store-name">Store XYZ, Hauz Khas Village</p>
-				        <p class="price"><span class="WebRupee">Rs.</span> 1,500</p>
+				        <p class="price"><i class="fa fa-rupee"></i> 1,500</p>
 				        <p><a href="#" class="btn btn-primary">See More &raquo;</a></p>
 				      </div>
 				    </div>
@@ -571,7 +730,7 @@
 				      <div class="caption">
 				        <p class="product-name">Supernet Cotton Saree</p>
 						<p class="store-name">Store XYZ, Hauz Khas Village</p>
-				        <p class="price"><span class="WebRupee">Rs.</span> 1,500</p>
+				        <p class="price"><i class="fa fa-rupee"></i> 1,500</p>
 				        <p><a href="#" class="btn btn-primary">See More &raquo;</a></p>
 				      </div>
 				    </div>
@@ -583,7 +742,7 @@
 				      <div class="caption">
 				        <p class="product-name">Supernet Cotton Saree</p>
 						<p class="store-name">Store XYZ, Hauz Khas Village</p>
-				        <p class="price"><span class="WebRupee">Rs.</span> 1,500</p>
+				        <p class="price"><i class="fa fa-rupee"></i> 1,500</p>
 				        <p><a href="#" class="btn btn-primary">See More &raquo;</a></p>
 				      </div>
 				    </div>
@@ -597,7 +756,7 @@
 					      <div class="caption">
 					        <p class="product-name">Supernet Cotton Saree</p>
 							<p class="store-name">Store XYZ, Hauz Khas Village</p>
-					        <p class="price"><span class="WebRupee">Rs.</span> 1,500</p>
+					        <p class="price"><i class="fa fa-rupee"></i> 1,500</p>
 					        <p><a href="#" class="btn btn-primary">See More &raquo;</a></p>
 					      </div>
 					    </div>
@@ -608,7 +767,7 @@
 					      <div class="caption">
 					        <p class="product-name">Supernet Cotton Saree</p>
 							<p class="store-name">Store XYZ, Hauz Khas Village</p>
-					        <p class="price"><span class="WebRupee">Rs.</span> 1,500</p>
+					        <p class="price"><i class="fa fa-rupee"></i> 1,500</p>
 					        <p><a href="#" class="btn btn-primary">See More &raquo;</a></p>
 					      </div>
 					    </div>
@@ -619,7 +778,7 @@
 					      <div class="caption">
 					        <p class="product-name">Supernet Cotton Saree</p>
 							<p class="store-name">Store XYZ, Hauz Khas Village</p>
-					        <p class="price"><span class="WebRupee">Rs.</span> 1,500</p>
+					        <p class="price"><i class="fa fa-rupee"></i> 1,500</p>
 					        <p><a href="#" class="btn btn-primary">See More &raquo;</a></p>
 					      </div>
 					    </div>
@@ -630,7 +789,7 @@
 					      <div class="caption">
 					        <p class="product-name">Supernet Cotton Saree</p>
 							<p class="store-name">Store XYZ, Hauz Khas Village</p>
-					        <p class="price"><span class="WebRupee">Rs.</span> 1,500</p>
+					        <p class="price"><i class="fa fa-rupee"></i> 1,500</p>
 					        <p><a href="#" class="btn btn-primary">See More &raquo;</a></p>
 					      </div>
 					    </div>
@@ -645,7 +804,7 @@
 					      <div class="caption">
 					        <p class="product-name">Supernet Cotton Saree</p>
 							<p class="store-name">Store XYZ, Hauz Khas Village</p>
-					        <p class="price"><span class="WebRupee">Rs.</span> 1,500</p>
+					        <p class="price"><i class="fa fa-rupee"></i> 1,500</p>
 					        <p><a href="#" class="btn btn-primary">See More &raquo;</a></p>
 					      </div>
 					    </div>
@@ -656,7 +815,7 @@
 					      <div class="caption">
 					        <p class="product-name">Supernet Cotton Saree</p>
 							<p class="store-name">Store XYZ, Hauz Khas Village</p>
-					        <p class="price"><span class="WebRupee">Rs.</span> 1,500</p>
+					        <p class="price"><i class="fa fa-rupee"></i> 1,500</p>
 					        <p><a href="#" class="btn btn-primary">See More &raquo;</a></p>
 					      </div>
 					    </div>
@@ -667,7 +826,7 @@
 					      <div class="caption">
 					        <p class="product-name">Supernet Cotton Saree</p>
 							<p class="store-name">Store XYZ, Hauz Khas Village</p>
-					        <p class="price"><span class="WebRupee">Rs.</span> 1,500</p>
+					        <p class="price"><i class="fa fa-rupee"></i> 1,500</p>
 					        <p><a href="#" class="btn btn-primary">See More &raquo;</a></p>
 					      </div>
 					    </div>
@@ -678,7 +837,7 @@
 					      <div class="caption">
 					        <p class="product-name">Supernet Cotton Saree</p>
 							<p class="store-name">Store XYZ, Hauz Khas Village</p>
-					        <p class="price"><span class="WebRupee">Rs.</span> 1,500</p>
+					        <p class="price"><i class="fa fa-rupee"></i> 1,500</p>
 					        <p><a href="#" class="btn btn-primary">See More &raquo;</a></p>
 					      </div>
 					    </div>
@@ -693,7 +852,7 @@
 					      <div class="caption">
 					        <p class="product-name">Supernet Cotton Saree</p>
 							<p class="store-name">Store XYZ, Hauz Khas Village</p>
-					        <p class="price"><span class="WebRupee">Rs.</span> 1,500</p>
+					        <p class="price"><i class="fa fa-rupee"></i> 1,500</p>
 					        <p><a href="#" class="btn btn-primary">See More &raquo;</a></p>
 					      </div>
 					    </div>
@@ -704,7 +863,7 @@
 					      <div class="caption">
 					        <p class="product-name">Supernet Cotton Saree</p>
 							<p class="store-name">Store XYZ, Hauz Khas Village</p>
-					        <p class="price"><span class="WebRupee">Rs.</span> 1,500</p>
+					        <p class="price"><i class="fa fa-rupee"></i> 1,500</p>
 					        <p><a href="#" class="btn btn-primary">See More &raquo;</a></p>
 					      </div>
 					    </div>
@@ -715,7 +874,7 @@
 					      <div class="caption">
 					        <p class="product-name">Supernet Cotton Saree</p>
 							<p class="store-name">Store XYZ, Hauz Khas Village</p>
-					        <p class="price"><span class="WebRupee">Rs.</span> 1,500</p>
+					        <p class="price"><i class="fa fa-rupee"></i> 1,500</p>
 					        <p><a href="#" class="btn btn-primary">See More &raquo;</a></p>
 					      </div>
 					    </div>
@@ -726,7 +885,7 @@
 					      <div class="caption">
 					        <p class="product-name">Supernet Cotton Saree</p>
 							<p class="store-name">Store XYZ, Hauz Khas Village</p>
-					        <p class="price"><span class="WebRupee">Rs.</span> 1,500</p>
+					        <p class="price"><i class="fa fa-rupee"></i> 1,500</p>
 					        <p><a href="#" class="btn btn-primary">See More &raquo;</a></p>
 					      </div>
 					    </div>
@@ -741,7 +900,7 @@
 					      <div class="caption">
 					        <p class="product-name">Supernet Cotton Saree</p>
 							<p class="store-name">Store XYZ, Hauz Khas Village</p>
-					        <p class="price"><span class="WebRupee">Rs.</span> 1,500</p>
+					        <p class="price"><i class="fa fa-rupee"></i> 1,500</p>
 					        <p><a href="#" class="btn btn-primary">See More &raquo;</a></p>
 					      </div>
 					    </div>
@@ -752,7 +911,7 @@
 					      <div class="caption">
 					        <p class="product-name">Supernet Cotton Saree</p>
 							<p class="store-name">Store XYZ, Hauz Khas Village</p>
-					        <p class="price"><span class="WebRupee">Rs.</span> 1,500</p>
+					        <p class="price"><i class="fa fa-rupee"></i> 1,500</p>
 					        <p><a href="#" class="btn btn-primary">See More &raquo;</a></p>
 					      </div>
 					    </div>
@@ -763,7 +922,7 @@
 					      <div class="caption">
 					        <p class="product-name">Supernet Cotton Saree</p>
 							<p class="store-name">Store XYZ, Hauz Khas Village</p>
-					        <p class="price"><span class="WebRupee">Rs.</span> 1,500</p>
+					        <p class="price"><i class="fa fa-rupee"></i> 1,500</p>
 					        <p><a href="#" class="btn btn-primary">See More &raquo;</a></p>
 					      </div>
 					    </div>
@@ -774,7 +933,7 @@
 					      <div class="caption">
 					        <p class="product-name">Supernet Cotton Saree</p>
 							<p class="store-name">Store XYZ, Hauz Khas Village</p>
-					        <p class="price"><span class="WebRupee">Rs.</span> 1,500</p>
+					        <p class="price"><i class="fa fa-rupee"></i> 1,500</p>
 					        <p><a href="#" class="btn btn-primary">See More &raquo;</a></p>
 					      </div>
 					    </div>
@@ -789,7 +948,7 @@
 					      <div class="caption">
 					        <p class="product-name">Supernet Cotton Saree</p>
 							<p class="store-name">Store XYZ, Hauz Khas Village</p>
-					        <p class="price"><span class="WebRupee">Rs.</span> 1,500</p>
+					        <p class="price"><i class="fa fa-rupee"></i> 1,500</p>
 					        <p><a href="#" class="btn btn-primary">See More &raquo;</a></p>
 					      </div>
 					    </div>
@@ -800,7 +959,7 @@
 					      <div class="caption">
 					        <p class="product-name">Supernet Cotton Saree</p>
 							<p class="store-name">Store XYZ, Hauz Khas Village</p>
-					        <p class="price"><span class="WebRupee">Rs.</span> 1,500</p>
+					        <p class="price"><i class="fa fa-rupee"></i> 1,500</p>
 					        <p><a href="#" class="btn btn-primary">See More &raquo;</a></p>
 					      </div>
 					    </div>
@@ -811,7 +970,7 @@
 					      <div class="caption">
 					        <p class="product-name">Supernet Cotton Saree</p>
 							<p class="store-name">Store XYZ, Hauz Khas Village</p>
-					        <p class="price"><span class="WebRupee">Rs.</span> 1,500</p>
+					        <p class="price"><i class="fa fa-rupee"></i> 1,500</p>
 					        <p><a href="#" class="btn btn-primary">See More &raquo;</a></p>
 					      </div>
 					    </div>
@@ -822,7 +981,7 @@
 					      <div class="caption">
 					        <p class="product-name">Supernet Cotton Saree</p>
 							<p class="store-name">Store XYZ, Hauz Khas Village</p>
-					        <p class="price"><span class="WebRupee">Rs.</span> 1,500</p>
+					        <p class="price"><i class="fa fa-rupee"></i> 1,500</p>
 					        <p><a href="#" class="btn btn-primary">See More &raquo;</a></p>
 					      </div>
 					    </div>
@@ -852,7 +1011,7 @@
 	<a href="#">About</a> · 
 	<a href="#">Privacy Policy</a> · 
 	<a  data-toggle="modal" href="#StoreLoginModal">Store Login</a> · 
-	<a href="#">Register your store</a> · 
+	<a data-toggle="modal" href="#StoreSignupModal">Register your store</a> · 
 	<a href="#">Contact Us  </a></p>
 
 </footer>
