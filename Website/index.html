@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app>
+<html ng-app="guest">
   <head>
 	
 	<meta charset="utf-8">
@@ -11,6 +11,7 @@
 	
 	<!--Angular.JS link-->
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
+	<script src="app/app.js"></script>
 
     <title>Clothzy: Home</title>
 
@@ -109,125 +110,10 @@
 
       </div>
     </div>
-	<div id="wrap">
-    <div class="container" id="main">
+	<div id="wrap" ng-controller="homePage">
+    <div class="container" id="main" ng-view>
       <!-- Example row of columns -->
-	<div class="body-head">Latest Designs</div>
 	
-      <div class="row">
-	     
-      
-      <div class="col-lg-4">
-		<h4>Product 2</h4>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#">View details &raquo;</a></p>
-      </div>
-      <div class="col-lg-2">
-			<img src="img/featured-product-1.jpg" class="img-responsive img-thumbnail 	">
-      </div>
-      <div class="col-lg-4">
-		<h4>Product 2</h4>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#">View details &raquo;</a></p>
-      </div>
-      <div class="col-lg-2">
-			<img src="img/featured-product-2.jpg" class="img-responsive img-thumbnail">
-      </div>
-
-     
-  	</div>
-
-      <hr>
-
-	<h3 class="body-head">Featured Stores</h3>
-      <div class="row">
-        <div class="col-lg-4">
-			<div class="thumbnail">
-		      <img src="img/featured-store-1.jpg" alt="...">
-		      <div class="caption">
-		        <h4>XYZ Store, Hauz Khas Village</h4>
-		        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-		        <p><a href="#" class="btn btn-primary">Visit Store &raquo;</a></p>
-		      </div>
-		    </div>
-        </div>
-       <div class="col-lg-4">
-			<div class="thumbnail">
-		      <img src="img/featured-store-2.jpg" alt="...">
-		      <div class="caption">
-		        <h4>ABC Store, South Ex II</h4>
-		        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-		        <p><a href="#" class="btn btn-primary">Visit Store &raquo;</a></p>
-		      </div>
-		    </div>
-        </div>
-       <div class="col-lg-4">
-			<div class="thumbnail">
-		      <img src="img/featured-store-3.jpg" alt="...">
-		      <div class="caption">
-		        <h4>DEF Store, Lajpat Nagar</h4>
-		        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-		        <p><a href="#" class="btn btn-primary">Visit Store &raquo;</a></p>
-		      </div>
-		    </div>
-        </div>
-      </div>
-
-      <hr>
-
-	<h3 class="body-head">Top Reviewers</h3>
-      <div class="row">
-		<div class="col-lg-4">
-        <ul class="media-list">
-		  <li class="media">
-		    <a class="pull-left" href="#">
-		      <img class="media-object reviewer-pic" src="img/top-reviewer-1.jpg" alt="...">
-		    </a>
-		    <div class="media-body">
-		      <h4 class="media-heading">Arun Kumar</h4>
-		      <p>New Delhi<br>
-				<span class="green">50</span> <span class="glyphicon glyphicon-thumbs-up"></span> | <span class="red">20 </span><span class="glyphicon glyphicon-thumbs-down"></span></p>
-		    </div>
-		  </li>
-		<li><h5>Latest Review: XYZ Store, Lajpat Nagar</b></h5>
-		<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p></li>
-		<a href="#">Read More &raquo;</a>
-		</ul>
-		</div>
-		<div class="col-lg-4">
-        <ul class="media-list">
-		  <li class="media">
-		    <a class="pull-left" href="#">
-		      <img class="media-object reviewer-pic" src="img/top-reviewer-2.jpg" alt="...">
-		    </a>
-		    <div class="media-body">
-		      <h4 class="media-heading">Satish Sharma</h4>
-		      <p>New Delhi<br>
-				<span class="green">50</span> <span class="glyphicon glyphicon-thumbs-up"></span> | <span class="red">20 </span><span class="glyphicon glyphicon-thumbs-down"></span></p>
-		    </div>
-		  </li>
-		<li><h5>Latest Review: XYZ Store, Lajpat Nagar</b></h5>
-		<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p></li>
-		<a href="#">Read More &raquo;</a>
-		</ul>
-		</div>
-		<div class="col-lg-4">
-        <ul class="media-list">
-		  <li class="media">
-		    <a class="pull-left" href="#">
-		      <img class="media-object reviewer-pic" src="img/top-reviewer-3.jpg" alt="...">
-		    </a>
-		    <div class="media-body">
-		      <h4 class="media-heading">Priya Das</h4>
-		      <p>New Delhi<br>
-				<span class="green">50</span> <span class="glyphicon glyphicon-thumbs-up"></span> | <span class="red">20 </span><span class="glyphicon glyphicon-thumbs-down"></span></p>
-		    </div>
-		  </li>
-		<li><h5>Latest Review: XYZ Store, Lajpat Nagar</b></h5>
-		<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p></li>
-		<a href="#">Read More &raquo;</a>
-		</ul>
-		</div>
 	
       </div>
 
